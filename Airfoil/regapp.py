@@ -1,10 +1,10 @@
-from flask import Flask, jsonify, request ,app
+from flask import Flask, jsonify, request
 import pickle
 import numpy as np
 import pandas as pd
 app = Flask(__name__)
 model=pickle.load(open('model.pkl','rb'))
-@app.route('/predict_api', methods=['POST']) #Calling the predict_api
+@app.route('/predict_api', methods=['POST'])
 def predict_api():
     data = request.json['data']
     print(data)
