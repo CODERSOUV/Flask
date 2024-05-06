@@ -1,2 +1,10 @@
 flask
-flask-cores
+Jinja2
+werkzeug
+numpy
+scipy
+scikit-learn
+pandas
+gunicorn
+matplotlib
+pickle
